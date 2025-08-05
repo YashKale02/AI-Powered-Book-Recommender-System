@@ -1,0 +1,44 @@
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.ipynb_checkpoints
+
+# ========================
+# Jupyter Notebook
+# ========================
+.ipynb_checkpoints/
+
+# ========================
+# Virtual Environments
+# ========================
+.venv/
+.venv-gpu/
+
+# ========================
+# Environment Variables
+# ========================
+.env
+.env.*
+
+# ========================
+# PyCharm
+# ========================
+.idea/
+
+# ========================
+# System Files
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# VSCode (if you use it too)
+# ========================
+.vscode/
