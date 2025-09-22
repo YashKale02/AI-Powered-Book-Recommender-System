@@ -26,4 +26,4 @@ A web-based book recommender that uses semantic search, zero-shot classification
 
 ### 🖼️ Demo
 
-![Book Recommender UI](<img width="1919" height="873" alt="Screenshot 2025-09-22 105513" src="https://github.com/user-attachments/assets/2e6be6e9-5adc-4dbc-aed3-dba147e210ce" />)
+![Book Recommender UI]([<img width="1919" height="873" alt="Screenshot 2025-09-22 105513" src="https://github.com/user-attachments/assets/2e6be6e9-5adc-4dbc-aed3-dba147e210ce" />](https://github.com/YashKale02/AI-Powered-Book-Recommender-System/blob/main/UI_img.png?raw=true))
