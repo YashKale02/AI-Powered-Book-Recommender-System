@@ -83,11 +83,20 @@ def recommend_books(
         results.append((row["large_thumbnail"], caption))
     return results
 
+# Replace NaN with "Unknown" (or drop them, depending on your use case)
+books["simple_categories"] = books["simple_categories"].fillna("Unknown")
+
+# Convert everything to string just in case
+books["simple_categories"] = books["simple_categories"].astype(str)
+
+# Now this will work safely
+categories = ["All"] + sorted(books["simple_categories"].unique())
+
 categories = ["All"] + sorted(books["simple_categories"].unique())
 tones = ["All"] + ["Happy", "Surprising", "Angry", "Suspenseful", "Sad"]
 
 with gr.Blocks(theme = gr.themes.Glass()) as dashboard:
-    gr.Markdown("# Semantic book recommender")
+    gr.Markdown("# Book recommender")
 
     with gr.Row():
         user_query = gr.Textbox(label = "Please enter a description of a book:",
